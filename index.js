@@ -24,7 +24,7 @@ function exec(command, options, callback) {
 }
 
 function execFile(file, args, options, callback) {
-    cp.execFile.call(this, file, args, options, callback);
+    cp.execFile(file, args, options, callback);
 }
 
 function run(func, args, options, callback) {
