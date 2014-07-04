@@ -12,7 +12,7 @@ module.exports.exec = exec;
 module.exports.execFile = execFile;
 
 function spawn(command, args, options, callback) {
-    run(cp.spawn.bind(this, command), args, options, callback);
+    return run(cp.spawn.bind(this, command), args, options, callback);
 }
 
 function fork(modulePath, args, options, callback) {
@@ -20,11 +20,11 @@ function fork(modulePath, args, options, callback) {
 }
 
 function exec(command, options, callback) {
-    cp.exec(command, options, callback);
+    return cp.exec(command, options, callback);
 }
 
 function execFile(file, args, options, callback) {
-    cp.execFile(file, args, options, callback);
+    return cp.execFile(file, args, options, callback);
 }
 
 function run(func, args, options, callback) {

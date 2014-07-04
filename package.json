@@ -1,7 +1,7 @@
 {
     "name": "easy-child",
     "description": "Wrappers to use node's child_process functions with asynchronous callbacks.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": {
         "name": "E2E Technologies Ltd",
         "email": "support@e2ebridge.com",
